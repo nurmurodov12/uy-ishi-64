@@ -28,7 +28,6 @@
 //         return `kiritilgan ${year} yil kabisa yili`
 //     } else {
 //         return `kiritilgan ${year} yil kabisa yili emas`
-
 //     }
 // }
 
@@ -95,7 +94,7 @@
 //         return acc + val
 //     })
 //     return arifmetikNumber / array.length
-// } 
+// }
 
 // console.log(ortaArifmetik([10, 20, 40, 70]));
 
@@ -123,14 +122,14 @@
 // const engUzunSoz = (text) => {
 //     const textArr = text.split(" ")
 //     let engUzunSoz = textArr[0]
-    
+
 //     for (let i of textArr) {
 //         if (engUzunSoz.length < i.length) {
 //             engUzunSoz = i
 //         } else if (engUzunSoz.length === i.length) {
 //             engUzunSoz = engUzunSoz
 //         }
-        
+
 //     }
 //     return `this talk is most long (${engUzunSoz}) `
 // }
@@ -155,3 +154,63 @@
 // }
 
 // console.log(bahoniAniqlash(69));
+
+// Massiv ichida berilgan son bor yoki yo‘qligini tekshiring.
+// 16
+
+// const inMassivNumber = (massiv, number) => {
+//     for (let i of massiv) {
+//         if (typeof number === "number") {
+//             if (i === number) {
+//                 return `siz kiritgan ${i} soni massiv ichida bor.`
+//             } else {
+//                 return "siz kirtigan son massiv ichida yuq"
+//             }
+//         } else {
+//             return "siz kiritgan qiymat number bulishi shart"
+//         }
+//     }
+// }
+
+// console.log(inMassivNumber([10, 20, 40, 50, 80], 15));
+
+// Matnda berilgan harf necha marta qatnashganini hisoblang.
+// 17
+// const harfSoni = (matn, harfi) => {
+//     let counter = 0
+//     for (let i = 0; i < matn.length; i++) {
+//         if (matn[i].toLocaleLowerCase() === harfi.toLocaleLowerCase()) {
+//             counter++
+//         }
+//     }
+//     return `siz kiritgan matnda ${harfi} harfi ${counter} marta qatnashgan`
+// }
+
+// console.log(harfSoni("Temur + Bitta omadi kelgan qiz", "a"));
+
+// Matndagi barcha bo‘sh joylarni olib tashlang.
+// 18
+// const removeSpace = text => text.split(" ").join("")
+
+// console.log(removeSpace("salom dunyo bulishi mumkin"));
+
+// 19
+// Massivdagi barcha sonlarni 2 baravar oshirib yangi massiv qaytaring.
+// const twoNumber = (array = []) => array.map((val) => { return val * 2 })
+
+// console.log(twoNumber([10, 10, 40, 70, 80]));
+
+// 20
+// Gapdagi barcha harflar sonini hisoblang (space hisoblanmasin).
+
+// const counterLatter = (gap) => {
+//     let counter = 0
+//     for (let i = 0; i < gap.length; i++) {
+//         if (gap[i] !== " ") {
+//             counter++
+//         }
+//     }
+//     return counter
+// }
+
+// console.log(counterLatter("Temur dasturchi ekan"));
